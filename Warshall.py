@@ -7,9 +7,11 @@ MA = [
 	[0,0,0,0], #4
 ]
 
+print("MATRIZ DE ADYACENCIA")
+for row in range(0, len(MA)):
+	print(MA[row])
 
-print(MA[0][3])
-print(len(MA))
+print("\nCantidad de vértices: ", len(MA))
 
 # Algoritmo de Warshall
 for i in range(0, len(MA)):
@@ -18,7 +20,7 @@ for i in range(0, len(MA)):
 			MA[i][j] = MA[i][j] or (MA[i][k] and MA[k][j])
 
 
-print("Matriz resultante (Cierre transitivo)")
+print("\NMATRIZ RESULTANTE (Cierre transitivo)")
 for row in range(0, len(MA)):
 	print(MA[row])
 
