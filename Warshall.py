@@ -11,6 +11,7 @@ MA = [
 print(MA[0][3])
 print(len(MA))
 
+# Algoritmo de Warshall
 for i in range(0, len(MA)):
 	for j in range(0, len(MA)):
 		for k in range(0, len(MA)):
