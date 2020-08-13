@@ -20,7 +20,7 @@ for i in range(0, len(MA)):
 			MA[i][j] = MA[i][j] or (MA[i][k] and MA[k][j])
 
 
-print("\NMATRIZ RESULTANTE (Cierre transitivo)")
+print("\nMATRIZ RESULTANTE (Cierre transitivo)")
 for row in range(0, len(MA)):
 	print(MA[row])
 
