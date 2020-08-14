@@ -1,5 +1,5 @@
 """
-	MainTranstiveClosure.py
+	MainTransitiveClosure.py
 	Calculates transitive closure using the Warshall algorithm
 	and Fourth Theorem of Transitive Closure (Main)
 	Author: Douglas De León, Isabel Ortiz, Pablo Ruiz
