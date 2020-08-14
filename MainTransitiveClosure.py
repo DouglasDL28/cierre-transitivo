@@ -23,6 +23,6 @@ print("*******************************************************************\n  Pr
 print("Por: Douglas de León, Isabel Ortiz y Pablo Ruiz\n\n")
 print("El resultado del cierre transitivo es el siguiente:")
 transitive_closure(R)
-print("\nPrograma que usa el algoritmo de Warshall para hacer el cierre transitivo de una relacion")
+print("\nPrograma que usa el algoritmo de Warshall para hacer el cierre transitivo de una relación")
 warshall_algorithm(R)
 print("\nGracias por usar el programa de cierre transitivo, que tenga un feliz día :)")
