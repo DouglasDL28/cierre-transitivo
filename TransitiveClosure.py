@@ -9,15 +9,6 @@
 import numpy as np
 
 
-# todo: Poner esto en el main
-R = [
-	[0, 0, 1, 1],		# 1
-	[1, 0, 0, 0],		# 2
-	[0, 1, 0, 0],		# 3
-	[0, 0, 0, 0],		# 4
-]
-
-
 def transitive_closure(matrix):
 	"""
 	Calculates the transitive closure of a relationship based on the fourth theorem
@@ -67,7 +58,5 @@ def warshall_algorithm(matrix):
 		print(row)
 
 
-# todo: Eliminar esto cuando se tenga implementado el main
-transitive_closure(R)
-warshall_algorithm(R)
+
 
