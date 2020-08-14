@@ -1,3 +1,7 @@
+"""
+	Warshall.py
+	Calculates transitive closure using the Warshall algorithm
+"""
 import numpy as np
 
 R = [
@@ -7,20 +11,28 @@ R = [
 	[0,0,0,0], #4
 ]
 
-print("MATRIZ DE ADYACENCIA")
-for row in range(0, len(R)):
-	print(R[row])
 
-print("\nCantidad de vértices: ", len(R))
+def warshall_algorithm(R):
+	"""
+	Calculates transitive closure using the Warshall algorithm
+	:param R: relation matrix
+	"""
+	print("MATRIZ DE ADYACENCIA")
+	for row in range(0, len(R)):
+		print(R[row])
 
-# Algoritmo de Warshall
-for k in range(0, len(R)):
-	for i in range(0, len(R)):
-		for j in range(0, len(R)):
-			R[i][j] = R[i][j] or (R[i][k] and R[k][j])
+	print("\nCantidad de vértices: ", len(R))
+
+	# Algoritmo de Warshall
+	for k in range(0, len(R)):
+		for i in range(0, len(R)):
+			for j in range(0, len(R)):
+				R[i][j] = R[i][j] or (R[i][k] and R[k][j])
 
 
-print("\nMATRIZ RESULTANTE (Cierre transitivo)")
-for row in range(0, len(R)):
-	print(R[row])
+	print("\nMATRIZ RESULTANTE (Cierre transitivo)")
+	for row in range(0, len(R)):
+		print(R[row])
+
+warshall_algorithm(R)
 
